@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ImageListDemo
@@ -12,12 +15,8 @@ namespace ImageListDemo
         static void Main()
         {
             Application.EnableVisualStyles();
-            Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.SetCompatibleTextRenderingDefault(false);
-            // apply fonts application wide
-            Application.SetDefaultFont(new System.Drawing.Font("Gorgia", 12, System.Drawing.FontStyle.Regular));
-            // running application
-            Application.Run(new MainWindow());
+            Application.Run(new Form1());
         }
     }
 }
